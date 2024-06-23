@@ -48,7 +48,7 @@ To predict thyroid disease, observing the performance of different ML algorithms
 Frontend is developed using scripting languages HTML, CSS.
 Using Flask trained machine learning model is easily plugged, extended and deployed as a web application.
 <div align="center">
-	<img src="https://github.com/suryateja6302/Thyro-Check/assets/111578838/cc4e2d0a-e7bd-45c6-8605-9dc0f307b900">
+	<img height="650" src="https://github.com/suryateja6302/Thyro-Check/assets/111578838/cc4e2d0a-e7bd-45c6-8605-9dc0f307b900">
  
 </div>
 Interface to take parameters from the user for prediction.
