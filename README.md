@@ -19,7 +19,7 @@ To predict thyroid problem we used more than one machine learning classifiers-
 
 <h2>Built With</h2>
 <div align="center">
-	<img src="https://github.com/suryateja6302/Thyro-Check/assets/111578838/a17b5dc1-8db7-4742-8c8b-6f93abfedbca">
+	<img src="https://github.com/suryateja6302/Thyro-Check/assets/111578838/a17b5dc1-8db7-4742-8c8b-6f93abfedbca"></br>
          <img src="https://github.com/suryateja6302/Thyro-Check/assets/111578838/11c96e13-0955-445b-b895-4ebf23b19806">
  
 </div>
