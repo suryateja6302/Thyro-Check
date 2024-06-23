@@ -1,5 +1,8 @@
 <h2>About the Project</h2>
-![image](https://github.com/suryateja6302/Thyro-Check/assets/111578838/86812fd3-5dc1-4d29-995e-ecc65c6489d4)
+<div align="center">
+	<img width = "400" height="400"  src="https://github.com/suryateja6302/Thyro-Check/assets/111578838/b9519167-7d41-4e49-8c6e-a33367a213a2">
+ 
+</div>
 
 
 The proposed approach aims to predict the Thyroid disease on the base of patient’s current data.
@@ -15,8 +18,6 @@ To predict thyroid problem we used more than one machine learning classifiers-
 </ul>  
 
 <h2>Built With</h2>
-![image](https://github.com/suryateja6302/Thyro-Check/assets/111578838/1889c0ce-a5ec-4107-b04d-754dddab9a07)
-![image](https://github.com/suryateja6302/Thyro-Check/assets/111578838/737b843b-9739-4b1b-92a1-66da2ce84212)
 
 <h2>Modules</h2>
 <h3>Backend Development</h3>
