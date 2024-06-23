@@ -1,6 +1,6 @@
 <h2>About the Project</h2>
 <div align="center">
-	<img width = "400" height="400"  src="https://github.com/suryateja6302/Thyro-Check/assets/111578838/b9519167-7d41-4e49-8c6e-a33367a213a2">
+	<img src="https://github.com/suryateja6302/Thyro-Check/assets/111578838/b9519167-7d41-4e49-8c6e-a33367a213a2">
  
 </div>
 
