@@ -1,5 +1,6 @@
 <h2>About the Project</h2>
-![image](https://github.com/suryateja6302/Thyro-Check/assets/111578838/7bdad542-4060-4957-bbc0-efdb51da93c0)
+![image](https://github.com/suryateja6302/Thyro-Check/assets/111578838/86812fd3-5dc1-4d29-995e-ecc65c6489d4)
+
 
 The proposed approach aims to predict the Thyroid disease on the base of patient’s current data.
 Feature selection from dataset is performed with statistical method to filter important attributes.
