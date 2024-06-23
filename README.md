@@ -1,4 +1,4 @@
-<h2>About the Project</h2>
+![image](https://github.com/suryateja6302/Thyro-Check/assets/111578838/d36fbe3e-ff85-441c-8622-14a7de99ab8f)<h2>About the Project</h2>
 <div align="center">
 	<img src="https://github.com/suryateja6302/Thyro-Check/assets/111578838/b9519167-7d41-4e49-8c6e-a33367a213a2">
  
@@ -48,8 +48,7 @@ To predict thyroid disease, observing the performance of different ML algorithms
 Frontend is developed using scripting languages HTML, CSS.
 Using Flask trained machine learning model is easily plugged, extended and deployed as a web application.
 <div align="center">
-	<img src="
-https://github.com/suryateja6302/Thyro-Check/assets/111578838/4a8d4c0e-b96c-4c4f-923a-ab82f92c02dc">
+	<img src="https://github.com/suryateja6302/Thyro-Check/assets/111578838/cc4e2d0a-e7bd-45c6-8605-9dc0f307b900">
  
 </div>
 Interface to take parameters from the user for prediction.
@@ -60,5 +59,9 @@ Interface to take parameters from the user for prediction.
 </div>
 
 <h2>Algorithms Accuracy</h2>
-![image](https://github.com/suryateja6302/Thyro-Check/assets/111578838/09985d37-4bef-4852-b006-299dd67821af)
+<div align="center">
+	<img src="https://github.com/suryateja6302/Thyro-Check/assets/111578838/56cd39c3-3b9a-462e-aee1-42417f5cc813">
+ 
+</div>
+
 
