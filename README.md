@@ -1,4 +1,6 @@
 <h2>About the Project</h2>
+![image](https://github.com/suryateja6302/Thyro-Check/assets/111578838/7bdad542-4060-4957-bbc0-efdb51da93c0)
+
 The proposed approach aims to predict the Thyroid disease on the base of patient’s current data.
 Feature selection from dataset is performed with statistical method to filter important attributes.
 To predict thyroid problem we used more than one machine learning classifiers-
@@ -10,9 +12,12 @@ To predict thyroid problem we used more than one machine learning classifiers-
  <li>Decision tree</li>
  <li>Random forest</li>
 </ul>  
-<h2>Modules</h2>
 
- 
+<h2>Built With</h2>
+![image](https://github.com/suryateja6302/Thyro-Check/assets/111578838/1889c0ce-a5ec-4107-b04d-754dddab9a07)
+![image](https://github.com/suryateja6302/Thyro-Check/assets/111578838/737b843b-9739-4b1b-92a1-66da2ce84212)
+
+<h2>Modules</h2>
 <h3>Backend Development</h3>
 <ul>
 <li><h4></h4>Data Collection and Pre-Processing</h4></li>
@@ -32,3 +37,7 @@ To predict thyroid disease, observing the performance of different ML algorithms
 
 
 </ul>
+<h3>Frontend Development</h3>
+Frontend is developed using scripting languages HTML, CSS.
+Using Flask trained machine learning model is easily plugged, extended and deployed as a web application.
+
