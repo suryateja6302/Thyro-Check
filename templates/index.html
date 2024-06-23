@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div style="color:rgb(0, 0, 0);font-family:Helvetica">
+        <form action="{{ url_for('predict')}}" method="post">
+            <h2 style="color:white;font-size: 50px;border-radius: 5;border-color: black;">Thyro Check</h2>
+            <h3 style="color: white;">Gender</h3><select name="sex" id="sex" required="required">
+                <option value="1">Male</option>
+                <option value="0">Female</option>
+            </select>
+
+           <h3 style="color: white;">Age (In Years)</h3><input id="age" name="age" type="number">
+           <h3 style="color: white;">TSH Levels (mIU/mL)</h3><input id="TSH" name="TSH" type="number" step="any" placeholder="0-530">
+            <h3 style="color: white;">T3 Levels (pg/mL)</h3><input id="T3" name="T3" type="number" step="any" placeholder="0.0-11.0">
+            <h3 style="color: white;">TT4 (Total T4) Levels (nmol/L)</h3><br><input id="TT4" name="TT4" type="number" step="any" placeholder="2.0-430.0">
+            <h3 style="color: white;">T4U (Free T4) Levels (ng/dL)</h3><br><input id="T4U" name="T4U" type="number" step="any" placeholder="0.0-2.0">
+            <h3 style="color: white;">FTI (Free Thyroxine Index)</h3><br><input id="FTI" name="FTI" type="number" step="any" placeholder="2.0-395.0">
+            <h3 style="color: white;">Are you suffering from Goitre?</h3><br><select name="goitre" id="goitre" required="required">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+            <h3 style="color: white;">Are you suffering from Hypopituitarism?</h3><br><select name="hypopituitary" id="hypopituitary" required="required">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+            <h3 style="color: white;">Are you Pregnant?</h3><br><select name="pregnant" id="pregnant" required="required">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+            <h3 style="color: white;">Are you suffering from any Sickness?</h3><br><select name="sick" id="sick" required="required">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+            <h3 style="color: white;">If you have had Thyroid Surgery before?</h3><br><select name="thyroid_surgery" id="thyroid_surgery" required="required">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+            <h3 style="color: white;">If you have any Tumor?</h3><br><select name="tumor" id="tumor" required="required">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+            <h3 style="color: white;">Are you suffering from any Psychiatric (Mental) Disorders?</h3><a href="https://www.who.int/news-room/fact-sheets/detail/mental-disorders" title="Click Here to Visit WHO website about Mental Disorders">For Example</a><br><select name="psych" id="psych" required="required">
+        
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+            <h3 style="color: white;">Are you going through any Lithium Medications?</h3><br><select name="lithium" id="lithium" required="required">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+            <br><br><br><br><button id="Submission" type="submit ">Detect</button>
+            <br>
+        </form>
+
+
+
+        <br><br><h2 style="color: white;">{{ prediction_text }}<h2>
+    </div>
+
+
+
+
+    <style>
+        body {
+            background-image: url('https://media.licdn.com/dms/image/D4D12AQGvifOuxL87Eg/article-cover_image-shrink_423_752/0/1682905476353?e=1695254400&v=beta&t=-Gu3yoJq7momnezkI75t1Ur4BGsrt5MS1pYU5SlwCBg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        
+            text-align: center;
+            padding: 0px;
+        }
+        
+        #box {
+            border-radius: 60px;
+            border-color: 45px;
+            border-style: solid;
+            font-family: cursive;
+            text-align: center;
+            background-color: rgb(138, 202, 19);
+            font-size: medium;
+            position: left;
+            width: 700px;
+            bottom: 9%;
+            height: 850px;
+            right: 30%;
+            padding: 0px;
+            margin: 0px;
+            font-size: 14px;
+        }
+        
+        #sex {
+            width: 83px;
+            height: 43px;
+            text-align: center;
+            border-radius: 0px;
+            font-size: 20px;
+        }
+
+        #age {
+            width: 99px;
+            height: 43px;
+            text-align: center;
+            border-radius:0px;
+            font-size: 18px;
+        }     
+        
+        #TSH {
+            width: 99px;
+            height: 43px;
+            text-align: center;
+            border-radius: 0px;
+            font-size: 18px;
+        }
+        
+        #T3 {
+            width: 99px;
+            height: 43px;
+            text-align: center;
+            border-radius: 0px;
+            font-size: 18px;
+        }
+
+        #TT4 {
+            width: 99px;
+            height: 43px;
+            text-align: center;
+            border-radius: 0px;
+            font-size: 18px;
+        }
+
+        #T4U {
+            width: 99px;
+            height: 43px;
+            text-align: center;
+            border-radius: 0px;
+            font-size: 18px;
+        }
+
+        #FTI {
+            width: 99px;
+            height: 43px;
+            text-align: center;
+            border-radius: 0px;
+            font-size: 18px;
+        }
+
+        #goitre {
+            width: 83px;
+            height: 43px;
+            text-align: center;
+            border-radius:0px;
+            font-size: 20px;
+        }
+
+        #hypopituitary {
+            width: 83px;
+            height: 43px;
+            text-align: center;
+            border-radius: 0px;
+            font-size: 20px;
+        }
+
+        #pregnant {
+            width: 83px;
+            height: 43px;
+            text-align: center;
+            border-radius: 0px;
+            font-size: 20px;
+        }
+
+        #sick {
+            width: 83px;
+            height: 43px;
+            text-align: center;
+            border-radius: 0px;
+            font-size: 20px;
+        }
+
+        #thyroid_surgery {
+            width: 83px;
+            height: 43px;
+            text-align: center;
+            border-radius: 0px;
+            font-size: 20px;
+        }
+
+        #tumor {
+            width: 83px;
+            height: 43px;
+            text-align: center;
+            border-radius: 0px;
+            font-size: 20px;
+        }
+
+        #psych {
+            width: 83px;
+            height: 43px;
+            text-align: center;
+            border-radius: 0px;
+            font-size: 20px;
+        }
+
+        #lithium {
+            width: 83px;
+            height: 43px;
+            text-align: center;
+            border-radius: 0px;
+            font-size: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 24px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color:white;
+            background-color:white;
+            border: none;
+            border-radius: 0px;
+            box-shadow: 0 9px white;
+        }
+
+        .button:hover {background-color: #3e8e41}
+
+        .button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px white;
+            transform: translateY(4px);
+        }
+
+        #Submission {
+            width: 200px;
+            height: 80px;
+            background-color:red;
+            text-align: center;
+            border-radius: 0px;
+            font-size: 40px;
+            color:white;
+            /* color: rgb(94, 226, 94); */
+            
+        }
+    </style>
+</body>
+
+</html>
