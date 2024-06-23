@@ -1,4 +1,4 @@
-![image](https://github.com/suryateja6302/Thyro-Check/assets/111578838/d36fbe3e-ff85-441c-8622-14a7de99ab8f)<h2>About the Project</h2>
+<h2>About the Project</h2>
 <div align="center">
 	<img src="https://github.com/suryateja6302/Thyro-Check/assets/111578838/b9519167-7d41-4e49-8c6e-a33367a213a2">
  
@@ -54,7 +54,7 @@ Using Flask trained machine learning model is easily plugged, extended and depl
 Interface to take parameters from the user for prediction.
 
 <div align="center">
-	<img src="https://github.com/suryateja6302/Thyro-Check/assets/111578838/3cab9514-fa78-418a-b539-2ca08a7f22c9">
+	<img height="500" src="https://github.com/suryateja6302/Thyro-Check/assets/111578838/3cab9514-fa78-418a-b539-2ca08a7f22c9">
  
 </div>
 
